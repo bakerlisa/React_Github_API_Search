@@ -12,6 +12,7 @@ import styled from './modules/SearchBar.module.scss'
 const SearchBar = () => {
   const [username,setUsername] = useState("")
   const [users,setUsers] = useState([])
+  const [focus,setFocus] = useState(false)
 
   const octokit = new Octokit({ 
     auth: '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',
@@ -26,15 +27,15 @@ const SearchBar = () => {
 
   } 
 
-  useEffect(() => {
-    axios({
-      method: "get",
-      url: `https://api.github.com/users/${username}/repos`,
-    })
-    .then(res => {
-      setUsers(res.data);
-    })
-  }, [username]);
+  // useEffect(() => {
+  //   axios({
+  //     method: "get",
+  //     url: `https://api.github.com/users/${username}/repos`,
+  //   })
+  //   .then(res => {
+  //     setUsers(res.data);
+  //   })
+  // }, [username]);
 
 
     const handleSubmit = (event) => {
@@ -45,11 +46,15 @@ const SearchBar = () => {
       console.log(username)
     }
 
+    const focusHandler = () => {
+      setFocus(true)
+    }
+
   return(
     <div className={styled.wrapper}>
 
       <div className={styled.searchWrap}>
-        <input type="text" name="search" placeholder="Search Users" onChange={onChangeHandler}/>
+        <input type="text" name="search" placeholder="Search Users" onChange={onChangeHandler} onFocus={() => setFocus(true)} onBlur={() => setFocus(false)} />
       </div>
 
       <div className={styled.submitWrp}>
@@ -66,6 +71,11 @@ const SearchBar = () => {
                   </div>)
             })
         }
+
+        {
+          focus === true && users.length === 0 && username.length > 0 ? <div className={styled.searches}>Hmmm...no usernames found by that title</div> : "" 
+        }
+         <div className={styled.searches}>Hmmm...no usernames found by that title</div>
       </div>
     </div>
   )
