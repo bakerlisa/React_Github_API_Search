@@ -1,0 +1,11 @@
+// crated this import so I have access to the global variables
+@import '../../App.scss';
+
+.wrapper{}
+
+.submitWrp{}
+
+.item{
+    a{color:$white; text-decoration: none; padding-bottom: 5px;}
+}
+.submit{height: 48px; width: 48px; position: relative;}

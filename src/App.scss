@@ -1,0 +1,33 @@
+// NOTE: this file is for global styles, indv componet styles should go in their own file under: components -> modules
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+// =========== VARIABLES ===========
+// Colors
+$white: #fff;
+$black: #373850;
+$purple: #5B5894;
+$lt_purple:#7D7D9D;
+$pink: #FF9AAC;
+$lt_gray: #7D7D9D;
+$gray:#EBEBED;
+$dk_gray:#CECEDF;
+
+// =========== MIXINS ===========
+@mixin mq($size){
+    @media all and (max-width:$size){
+        @content;
+    }
+}
+
+// =========== GLOBAL ===========
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body{background-color: $black;}
+
+p,a,li,span,div{line-height:1.25; font-size:16px; font-family: 'Roboto', sans-serif;}
+
+.container{max-width:1200px; margin: 0 auto; padding: 50px;
+    @include mq(1000px){
+        padding: 25px;
+    }
+}
