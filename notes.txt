@@ -1,16 +1,40 @@
+=============== PART I - Project details ===============
 TECHNOLOGIES:
-1. SCSS
-2. Axios
-3. module css
-4. 
+1. SCSS:
+    - React has a built in compiler for SASS/SCSS. Using SASS/SCSS in projects means code is more reusable through mixins and variables that aren't as easy to use in vanilla CSS.
+    - Also feel it can keep code blocks more contained
+2. Axios:
+    - used to make github calls
+    - easy to implements and updates on the fly use UseEffect
+3. Module CSS:
+    - Like to implement CSS with modules because it keeps CSS contained and keeps the load time down. It Its not needed it isn't loaded
+4. Functional Components:
+    - Personal preference. They are cleaner, less verbose, and have the same functionality.
+5. 
 
-Notes for the designer or project manager:
-
+******* Notes for designer or project manager *******
 INCONSISTENCY IN THE DESIGN:
-1. the wording of the placeholder text changes from 'Search Users' to 'Searcj for Github Users'
+1. the wording of the placeholder text changes from 'Search Users' to 'Search for Github Users'
 2. Part I has a plain purple background while Part II has a purple background with a dotted texture (this is also present on when hovering over dropdown items)
 
 MISSING ELEMENTS:
 1. Icons - I'm using Fontawesome but its thicker than the icon in the DESIGN
 2. Font - I don't have access to the typography. One of the back up fonts was Robot, which is a Google font and one I have access to.
     - This might tamper with the exact spacing the client is looking for because Robot thickness and height may not be exact. So I eyeballed it to match the comp
+
+=============== PART II - github API install ===============
+Start the project and check visually 
+
+
+=============== PART III - improvements =============== 
+All depends on what the github api is being used for. 
+
+I would like more info on the project itself. How its going to be used. How people will interact with it. Why it's being built in the first place. 
+
+1. A way to save the people you're looking for, that isn't lost on a refresh
+2. 
+
+
+
+
+
