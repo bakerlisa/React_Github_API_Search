@@ -1,0 +1,16 @@
+TECHNOLOGIES:
+1. SCSS
+2. Axios
+3. module css
+4. 
+
+Notes for the designer or project manager:
+
+INCONSISTENCY IN THE DESIGN:
+1. the wording of the placeholder text changes from 'Search Users' to 'Searcj for Github Users'
+2. Part I has a plain purple background while Part II has a purple background with a dotted texture (this is also present on when hovering over dropdown items)
+
+MISSING ELEMENTS:
+1. Icons - I'm using Fontawesome but its thicker than the icon in the DESIGN
+2. Font - I don't have access to the typography. One of the back up fonts was Robot, which is a Google font and one I have access to.
+    - This might tamper with the exact spacing the client is looking for because Robot thickness and height may not be exact. So I eyeballed it to match the comp
