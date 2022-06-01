@@ -23,32 +23,23 @@ const SearchBar = () => {
 
   const onChangeHandler = (event) => {
     setUsername(event.target.value);
-    // myAsyncMethod()
-
   } 
 
-  // useEffect(() => {
-  //   axios({
-  //     method: "get",
-  //     url: `https://api.github.com/users/${username}/repos`,
-  //   })
-  //   .then(res => {
-  //     setUsers(res.data);
-  //   })
-  // }, [username]);
+  useEffect(() => {
+    axios({
+      method: "get",
+      url: `https://api.github.com/users/${username}/repos`,
+    })
+    .then(res => {
+      setUsers(res.data);
+    })
+  }, [username]);
 
 
     const handleSubmit = (event) => {
       event.preventDefault();
     }
 
-    const searchRepo = () => {
-      console.log(username)
-    }
-
-    const focusHandler = () => {
-      setFocus(true)
-    }
 
   return(
     <div className={styled.wrapper}>
@@ -65,10 +56,13 @@ const SearchBar = () => {
       { users.length > 0 ? <div className={styled.searches}>
           {
               users.map((item,inx) => {
-                  return (<div className={styled.item} key={inx}>
-                    <img src={item.avatar_url} />
-                    <a className={styled.link} href={item.owner.url}>{item.full_name}</a>
-                    </div>)
+                  return ( <a className={styled.link} href={item.owner.html_url}> 
+                    <img className={styled.profileImg} src={item.owner.avatar_url} />
+                    <div className={styled.txtInfo}>
+                      <p className={styled.name}>{item.owner.login}</p>
+                      <p className={styled.url}>{item.owner.html_url}</p>
+                    </div>
+                  </a>)
               })
           }
           </div> : ""

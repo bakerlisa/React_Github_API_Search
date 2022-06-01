@@ -5,7 +5,9 @@ TECHNOLOGIES:
     - Also feel it can keep code blocks more contained
 2. Axios:
     - used to make github calls
-    - easy to implements and updates on the fly use UseEffect
+    - easy to implements and updates on the fly use 
+3. UseEffect
+    - Yes having it load when the page initally loads is a wast. But I wanted it to recall everytime the the input text changes and UseEffect is really great for this. 
 3. Module CSS:
     - Like to implement CSS with modules because it keeps CSS contained and keeps the load time down. It Its not needed it isn't loaded
 4. Functional Components:
@@ -16,6 +18,7 @@ TECHNOLOGIES:
 INCONSISTENCY IN THE DESIGN:
 1. the wording of the placeholder text changes from 'Search Users' to 'Search for Github Users'
 2. Part I has a plain purple background while Part II has a purple background with a dotted texture (this is also present on when hovering over dropdown items)
+3. Looks like the background hover in the dropdown menu is another color of gray not stated in the design constraints
 
 MISSING ELEMENTS:
 1. Icons - I'm using Fontawesome but its thicker than the icon in the DESIGN
@@ -27,7 +30,7 @@ Start the project and check visually
 
 
 =============== PART III - improvements =============== 
-All depends on what the github api is being used for. 
+All depends on what this project is being used for. 
 
 I would like more info on the project itself. How its going to be used. How people will interact with it. Why it's being built in the first place. 
 
@@ -36,7 +39,8 @@ I would like more info on the project itself. How its going to be used. How peop
 3. Are they any additional animations the client/manager wants on the site
     - for example does the dropdown just appear, or does it fade in?
 4. Does mobile look the same as Desktop? Or is this the desktop version?
-5. 
+5. what happens when I click the search icon?
+6. 
 
 
 

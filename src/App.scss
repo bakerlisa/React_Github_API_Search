@@ -11,6 +11,7 @@ $lt_purple:#7D7D9D;
 $pink: #FF9AAC;
 $lt_gray: #7D7D9D;
 $gray:#EBEBED;
+$gray1:#F2F2F6;
 $dk_gray:#CECEDF;
 
 // =========== MIXINS ===========
@@ -19,6 +20,12 @@ $dk_gray:#CECEDF;
         @content;
     }
 }
+
+@mixin transition(){
+  transition: all .25s ease-in;
+}
+
+
 
 // =========== GLOBAL ===========
 *{box-sizing: border-box; margin: 0; padding: 0; font-size:16px; line-height:1.25; font-family: 'Roboto', sans-serif; font-weight:400; color:$black;}
