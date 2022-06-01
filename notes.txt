@@ -32,7 +32,11 @@ All depends on what the github api is being used for.
 I would like more info on the project itself. How its going to be used. How people will interact with it. Why it's being built in the first place. 
 
 1. A way to save the people you're looking for, that isn't lost on a refresh
-2. 
+2. What do: hover, focus, and clicked states look like
+3. Are they any additional animations the client/manager wants on the site
+    - for example does the dropdown just appear, or does it fade in?
+4. Does mobile look the same as Desktop? Or is this the desktop version?
+5. 
 
 
 

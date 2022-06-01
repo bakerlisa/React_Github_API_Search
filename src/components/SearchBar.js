@@ -61,7 +61,8 @@ const SearchBar = () => {
         <FontAwesomeIcon icon={faMagnifyingGlass} />
         <input type="submit" className={styled.submit} value="" onClick={handleSubmit}/>
       </div>
-      {users.length > 0 ? <div className={styled.searches}>
+      
+      { users.length > 0 ? <div className={styled.searches}>
           {
               users.map((item,inx) => {
                   return (<div className={styled.item} key={inx}>
