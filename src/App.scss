@@ -1,5 +1,4 @@
 // NOTE: this file is for global styles, indv componet styles should go in their own file under: components -> modules
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 // =========== VARIABLES ===========
@@ -24,8 +23,6 @@ $dk_gray:#CECEDF;
 @mixin transition(){
   transition: all .25s ease-in;
 }
-
-
 
 // =========== GLOBAL ===========
 *{box-sizing: border-box; margin: 0; padding: 0; font-size:16px; line-height:1.25; font-family: 'Roboto', sans-serif; font-weight:400; color:$black;}

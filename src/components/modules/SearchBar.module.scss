@@ -10,20 +10,18 @@
 // Search
 .searchWrap{width: calc(100% - 48px); 
     input{padding: 17px; max-height: 48px; border: none; width: 100%; 
-        &:focus{outline: none; border:none;
-            box-shadow: 0px 0px 20px 0px rgba(255,154,172,0.5) inset;
-            -webkit-box-shadow: 0px 0px 20px 0px rgba(255,154,172,0.5) inset;
-            -moz-box-shadow: 0px 0px 20px 0px rgba(255,154,172,0.5) inset;
-        }
-        
+        &:focus{outline: none; border:none;}
     }
     ::placeholder{ color: $dk_gray;}
 }
+.nosearches{background-color: $gray; padding: 15px; width: 100%;}
 
 // Dropdown
-.searches{background-color: $white; padding: 0; width: 100%; max-height:384px; overflow: scroll; 
+.searches{background-color: $white; padding: 0; width: 100%; max-height:384px; overflow: scroll; box-shadow: 3px 15px 22px -9px rgba(0,0,0,0.2) inset;
+    -webkit-box-shadow: 3px 15px 22px -9px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 3px 15px 22px -9px rgba(0,0,0,0.2) inset;
     .profileImg{height: 64px; width: auto;}
-    .link{display: flex;align-items: center;justify-content: start; padding: 15px ; width: 100%; text-decoration: none; @include transition();
+    .link{display: flex;align-items: center;justify-content: start; padding: 15px ; width: 100%; text-decoration: none; @include transition();border-bottom:solid 1px $gray1;
         &:hover{background-color: $gray1; @include transition();}
     }
     .txtInfo{padding: 0 15px; 
