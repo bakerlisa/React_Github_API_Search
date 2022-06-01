@@ -61,22 +61,23 @@ const SearchBar = () => {
         <FontAwesomeIcon icon={faMagnifyingGlass} />
         <input type="submit" className={styled.submit} value="" onClick={handleSubmit}/>
       </div>
-
-      <div className={styled.searches}>
-        {
-            users.length > 0 && users.map((item,inx) => {
-                return (<div className={styled.item} key={inx}>
-                  <img src={item.avatar_url} />
-                  <a className={styled.link} href={item.owner.url}>{item.full_name}</a>
-                  </div>)
-            })
-        }
+      {users.length > 0 ? <div className={styled.searches}>
+          {
+              users.map((item,inx) => {
+                  return (<div className={styled.item} key={inx}>
+                    <img src={item.avatar_url} />
+                    <a className={styled.link} href={item.owner.url}>{item.full_name}</a>
+                    </div>)
+              })
+          }
+          </div> : ""
+      }
 
         {
           focus === true && users.length === 0 && username.length > 0 ? <div className={styled.searches}>Hmmm...no usernames found by that title</div> : "" 
         }
-         <div className={styled.searches}>Hmmm...no usernames found by that title</div>
-      </div>
+
+      
     </div>
   )
 }
