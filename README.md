@@ -6,7 +6,7 @@ Small and Simple project to work with GitHubs API and continue building in React
 
 
 
-** Prompt: **<br/>
+<strong>Prompt:</strong><br/>
 I was given a prompt on how it should look and function<br/>
 https://github.com/lisabroadhead/github_search/blob/main/prompt.md
 
