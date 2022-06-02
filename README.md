@@ -17,8 +17,7 @@ https://github.com/lisabroadhead/github_search/blob/main/notes.txt
 
 ## Images
 ![](https://github.com/lisabroadhead/github_search/blob/main/Screen%20Recording%202022-06-02%20at%2010.06.05%20AM.gif)
-![](https://github.com/lisabroadhead/github_search/blob/main/Screen%20Shot%202022-06-01%20at%206.36.59%20PM.png)
 
 
 ### Don't forget to enjoy the day!
-![](https://github.com/lisabroadhead/FrontEndDevelopment/blob/main/css.gif)
+![](https://github.com/lisabroadhead/github_search/blob/main/Dhaii03XcAA5uD5.jpeg)
