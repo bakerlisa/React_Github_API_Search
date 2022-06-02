@@ -6,11 +6,11 @@ Small and Simple project to work with GitHubs API and continue building in React
 
 
 
-<strong>Prompt:</strong><br/>
+#### Prompt:
 I was given a prompt on how it should look and function<br/>
 https://github.com/lisabroadhead/github_search/blob/main/prompt.md
 
-<strong>Notes:</strong><br/>
+#### Notes:
 Notes based on the prompt. I found Inconsistency in the design, missing elements, thoughts, questions, and improvements:<br/>
 https://github.com/lisabroadhead/github_search/blob/main/notes.txt
 
