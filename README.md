@@ -1,5 +1,7 @@
 # React and GitHub API
 
+![](https://github.com/lisabroadhead/github_search/blob/main/Screen%20Recording%202022-06-02%20at%2010.06.05%20AM.gif)
+
 ### Technologies/Languages: 
 React, SCSS
 
@@ -14,9 +16,6 @@ https://github.com/lisabroadhead/github_search/blob/main/prompt.md
 ### Notes:
 Notes based on the prompt. I found Inconsistency in the design, missing elements, thoughts, questions, and improvements:<br/>
 https://github.com/lisabroadhead/github_search/blob/main/notes.txt
-
-## Images
-![](https://github.com/lisabroadhead/github_search/blob/main/Screen%20Recording%202022-06-02%20at%2010.06.05%20AM.gif)
 
 
 ### Don't forget to enjoy the day!
